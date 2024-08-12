@@ -1,0 +1,36 @@
+@import './base.css';
+
+#app {
+  /* 移除最大宽度 */
+  /* max-width: 1280px; */
+  /* 移除内边距 */
+  /* padding: 2rem; */
+  font-weight: normal;
+}
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/* 调整 body 的样式 */
+body {
+  /* 使用 flex 布局并居中内容 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 占据整个视口高度 */
+  min-height: 100vh;
+  /* 避免滚动条 */
+  overflow: hidden;
+  /* 移除默认的 margin */
+  margin: 0;
+}
